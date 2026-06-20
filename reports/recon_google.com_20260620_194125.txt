@@ -1,0 +1,159 @@
+=========================================
+RECONNAISSANCE REPORT
+=========================================
+Target: google.com
+Scan Date: Sat Jun 20 19:44:39 IST 2026
+=========================================
+
+1. WHOIS INFORMATION
+----------------------------------------
+getaddrinfo(whois.verisign-grs.com): Temporary failure in name resolution
+
+2. DNS RECORDS
+----------------------------------------
+[*] A Records:
+;; communications error to 10.21.34.80#53: host unreachable
+;; communications error to 10.21.34.80#53: host unreachable
+;; communications error to 10.21.34.80#53: host unreachable
+;; communications error to 2401:4900:c09a:c25::ca#53: host unreachable
+;; communications error to 2401:4900:c09a:c25::d0#53: host unreachable
+
+; <<>> DiG 9.20.23-1-Debian <<>> google.com A +short
+;; global options: +cmd
+;; no servers could be reached
+[*] MX Records:
+;; communications error to 10.21.34.80#53: host unreachable
+;; communications error to 10.21.34.80#53: host unreachable
+;; communications error to 10.21.34.80#53: host unreachable
+;; communications error to 2401:4900:c09a:c25::ca#53: host unreachable
+;; communications error to 2401:4900:c09a:c25::d0#53: host unreachable
+
+; <<>> DiG 9.20.23-1-Debian <<>> google.com MX +short
+;; global options: +cmd
+;; no servers could be reached
+[*] NS Records:
+;; communications error to 10.21.34.80#53: host unreachable
+;; communications error to 10.21.34.80#53: host unreachable
+;; communications error to 10.21.34.80#53: host unreachable
+;; communications error to 2401:4900:c09a:c25::ca#53: host unreachable
+;; communications error to 2401:4900:c09a:c25::d0#53: host unreachable
+
+; <<>> DiG 9.20.23-1-Debian <<>> google.com NS +short
+;; global options: +cmd
+;; no servers could be reached
+[*] TXT Records:
+;; communications error to 10.21.34.80#53: host unreachable
+;; communications error to 10.21.34.80#53: host unreachable
+;; communications error to 10.21.34.80#53: host unreachable
+;; communications error to 2401:4900:c09a:c25::ca#53: host unreachable
+;; communications error to 2401:4900:c09a:c25::d0#53: host unreachable
+
+; <<>> DiG 9.20.23-1-Debian <<>> google.com TXT +short
+;; global options: +cmd
+;; no servers could be reached
+
+3. HTTP HEADERS
+----------------------------------------
+
+[0;34m[*] Checking https://google.com[0m
+HTTP/2 301 
+location: https://www.google.com/
+content-type: text/html; charset=UTF-8
+content-security-policy-report-only: object-src 'none';base-uri 'self';script-src 'nonce-8raA0ggaML9gjzj5de-j7Q' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp
+date: Sat, 20 Jun 2026 12:56:57 GMT
+expires: Mon, 20 Jul 2026 12:56:57 GMT
+cache-control: public, max-age=2592000
+server: gws
+content-length: 220
+x-xss-protection: 0
+x-frame-options: SAMEORIGIN
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+
+[0;34m[*] Checking http://google.com[0m
+HTTP/1.1 301 Moved Permanently
+Location: http://www.google.com/
+Content-Type: text/html; charset=UTF-8
+Content-Security-Policy-Report-Only: object-src 'none';base-uri 'self';script-src 'nonce-8GRWNn80SphKtIewaRaWbQ' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp
+Date: Sat, 20 Jun 2026 12:56:58 GMT
+Expires: Mon, 20 Jul 2026 12:56:58 GMT
+Cache-Control: public, max-age=2592000
+Server: gws
+Content-Length: 219
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+
+[*] Checking https://google.com
+HTTP/2 301 
+location: https://www.google.com/
+content-type: text/html; charset=UTF-8
+content-security-policy-report-only: object-src 'none';base-uri 'self';script-src 'nonce-Hop3EPT8iEYBD5a2O_q0mg' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp
+date: Sat, 20 Jun 2026 13:30:27 GMT
+expires: Mon, 20 Jul 2026 13:30:27 GMT
+cache-control: public, max-age=2592000
+server: gws
+content-length: 220
+x-xss-protection: 0
+x-frame-options: SAMEORIGIN
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+[*] Checking http://google.com
+HTTP/1.1 301 Moved Permanently
+Location: http://www.google.com/
+Content-Type: text/html; charset=UTF-8
+Content-Security-Policy-Report-Only: object-src 'none';base-uri 'self';script-src 'nonce-iQbQ5ROPOsOsDQ88IUQC_Q' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp
+Date: Sat, 20 Jun 2026 13:30:27 GMT
+Expires: Mon, 20 Jul 2026 13:30:27 GMT
+Cache-Control: public, max-age=2592000
+Server: gws
+Content-Length: 219
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+
+[*] Checking https://google.com
+[*] Checking http://google.com
+
+4. WEB TECHNOLOGIES
+----------------------------------------
+
+5. SUBDOMAINS
+----------------------------------------
+Read proxies.yaml from /etc/theHarvester/proxies.yaml
+*******************************************************************
+*  _   _                                            _             *
+* | |_| |__   ___    /\  /\__ _ _ ____   _____  ___| |_ ___ _ __  *
+* | __|  _ \ / _ \  / /_/ / _` | '__\ \ / / _ \/ __| __/ _ \ '__| *
+* | |_| | | |  __/ / __  / (_| | |   \ V /  __/\__ \ ||  __/ |    *
+*  \__|_| |_|\___| \/ /_/ \__,_|_|    \_/ \___||___/\__\___|_|    *
+*                                                                 *
+* theHarvester 4.10.1                                             *
+* Coded by Christian Martorella                                   *
+* Edge-Security Research                                          *
+* cmartorella@edge-security.com                                   *
+*                                                                 *
+*******************************************************************
+
+[*] Target: google.com 
+
+[*] Searching CRTsh. 
+
+[*] No IPs found.
+
+[*] No emails found.
+
+[*] No people found.
+
+[*] No hosts found.
+
+
+
+6. NMAP RESULTS
+----------------------------------------
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-06-20 19:44 +0530
+Failed to resolve "google.com".
+WARNING: No targets were specified, so 0 hosts scanned.
+Nmap done: 0 IP addresses (0 hosts up) scanned in 4.82 seconds
+
+=========================================
+Report Generated: Sat Jun 20 19:44:39 IST 2026
+=========================================

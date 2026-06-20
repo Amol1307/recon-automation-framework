@@ -1,0 +1,9 @@
+Checking for new libpostal data file...
+New libpostal data file available
+curl: (6) Could not resolve host: github.com
+Warning: Problem : timeout. Retrying in 2 seconds. 3 retries left.
+curl: (6) Could not resolve host: github.com
+Warning: Problem : timeout. Retrying in 2 seconds. 2 retries left.
+curl: (6) Could not resolve host: github.com
+Warning: Problem : timeout. Retrying in 2 seconds. 1 retry left.
+curl: (6) Could not resolve host: github.com

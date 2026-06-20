@@ -1,0 +1,40 @@
+[*] A Records:
+;; communications error to 10.21.34.80#53: host unreachable
+;; communications error to 10.21.34.80#53: host unreachable
+;; communications error to 10.21.34.80#53: host unreachable
+;; communications error to 2401:4900:c09a:c25::ca#53: host unreachable
+;; communications error to 2401:4900:c09a:c25::d0#53: host unreachable
+
+; <<>> DiG 9.20.23-1-Debian <<>> google.com A +short
+;; global options: +cmd
+;; no servers could be reached
+[*] MX Records:
+;; communications error to 10.21.34.80#53: host unreachable
+;; communications error to 10.21.34.80#53: host unreachable
+;; communications error to 10.21.34.80#53: host unreachable
+;; communications error to 2401:4900:c09a:c25::ca#53: host unreachable
+;; communications error to 2401:4900:c09a:c25::d0#53: host unreachable
+
+; <<>> DiG 9.20.23-1-Debian <<>> google.com MX +short
+;; global options: +cmd
+;; no servers could be reached
+[*] NS Records:
+;; communications error to 10.21.34.80#53: host unreachable
+;; communications error to 10.21.34.80#53: host unreachable
+;; communications error to 10.21.34.80#53: host unreachable
+;; communications error to 2401:4900:c09a:c25::ca#53: host unreachable
+;; communications error to 2401:4900:c09a:c25::d0#53: host unreachable
+
+; <<>> DiG 9.20.23-1-Debian <<>> google.com NS +short
+;; global options: +cmd
+;; no servers could be reached
+[*] TXT Records:
+;; communications error to 10.21.34.80#53: host unreachable
+;; communications error to 10.21.34.80#53: host unreachable
+;; communications error to 10.21.34.80#53: host unreachable
+;; communications error to 2401:4900:c09a:c25::ca#53: host unreachable
+;; communications error to 2401:4900:c09a:c25::d0#53: host unreachable
+
+; <<>> DiG 9.20.23-1-Debian <<>> google.com TXT +short
+;; global options: +cmd
+;; no servers could be reached

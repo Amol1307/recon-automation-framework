@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recon Report - scanme.nmap.org</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        header h1 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        
+        header p {
+            color: #666;
+            font-size: 1.1em;
+        }
+        
+        .info {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .info-box {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .info-box strong {
+            color: #667eea;
+        }
+        
+        section {
+            background: white;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        section h2 {
+            background: #667eea;
+            color: white;
+            padding: 20px;
+            margin: 0;
+            font-size: 1.5em;
+            border-bottom: 3px solid #764ba2;
+        }
+        
+        .section-content {
+            padding: 20px;
+        }
+        
+        pre {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        
+        footer {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            color: #666;
+            margin-top: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .badge {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin: 5px 5px 5px 0;
+        }
+        
+        .toc {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        
+        .toc h3 {
+            margin-bottom: 10px;
+            color: #667eea;
+        }
+        
+        .toc a {
+            display: inline-block;
+            margin: 5px 10px 5px 0;
+            padding: 8px 15px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 5px;
+            border: 1px solid #667eea;
+            transition: 0.3s;
+        }
+        
+        .toc a:hover {
+            background: #667eea;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 Reconnaissance Report</h1>
+            <p>Automated OSINT & Vulnerability Assessment</p>
+            
+            <div class="info">
+                <div class="info-box">
+                    <strong>Target:</strong><br>scanme.nmap.org
+                </div>
+                <div class="info-box">
+                    <strong>Date:</strong><br>2026-06-20 20:15:53
+                </div>
+                <div class="info-box">
+                    <strong>Framework:</strong><br>Recon Automation v2.0
+                </div>
+            </div>
+        </header>
+        
+        <div class="toc">
+            <h3>📋 Report Sections</h3>
+            <a href="#whois">WHOIS</a>
+            <a href="#dns">DNS</a>
+            <a href="#headers">Headers</a>
+            <a href="#whatweb">WhatWeb</a>
+            <a href="#subdomains">Subdomains</a>
+            <a href="#amass">AMASS</a>
+            <a href="#nmap">Nmap</a>
+            <a href="#gobuster">Gobuster</a>
+            <a href="#nikto">Nikto</a>
+            <a href="#nuclei">Nuclei</a>
+        </div>
+        
+        <section id="whois">
+            <h2>📋 WHOIS Information</h2>
+            <div class="section-content">
+                <pre>getaddrinfo(whois.pir.org): Temporary failure in name resolution
+</pre>
+            </div>
+        </section>
+        
+        <section id="dns">
+            <h2>🔍 DNS Records</h2>
+            <div class="section-content">
+                <pre>[*] A Records:
+;; communications error to 10.21.34.80#53: host unreachable
+;; communications error to 10.21.34.80#53: host unreachable
+;; communications error to 10.21.34.80#53: host unreachable
+;; communications error to 2401:4900:c09a:c25::ca#53: host unreachable
+;; communications error to 2401:4900:c09a:c25::d0#53: host unreachable
+
+; <<>> DiG 9.20.23-1-Debian <<>> scanme.nmap.org A +short
+;; global options: +cmd
+;; no servers could be reached
+[*] MX Records:
+;; communications error to 10.21.34.80#53: host unreachable
+;; communications error to 10.21.34.80#53: host unreachable
+;; communications error to 10.21.34.80#53: host unreachable
+;; communications error to 2401:4900:c09a:c25::ca#53: host unreachable
+;; communications error to 2401:4900:c09a:c25::d0#53: host unreachable
+
+; <<>> DiG 9.20.23-1-Debian <<>> scanme.nmap.org MX +short
+;; global options: +cmd
+;; no servers could be reached
+[*] NS Records:
+;; communications error to 10.21.34.80#53: host unreachable
+;; communications error to 10.21.34.80#53: host unreachable
+;; communications error to 10.21.34.80#53: host unreachable
+;; communications error to 2401:4900:c09a:c25::ca#53: host unreachable
+;; communications error to 2401:4900:c09a:c25::d0#53: host unreachable
+
+; <<>> DiG 9.20.23-1-Debian <<>> scanme.nmap.org NS +short
+;; global options: +cmd
+;; no servers could be reached
+[*] TXT Records:
+;; communications error to 10.21.34.80#53: host unreachable
+;; communications error to 10.21.34.80#53: host unreachable
+;; communications error to 10.21.34.80#53: host unreachable
+;; communications error to 2401:4900:c09a:c25::ca#53: host unreachable
+;; communications error to 2401:4900:c09a:c25::d0#53: host unreachable
+
+; <<>> DiG 9.20.23-1-Debian <<>> scanme.nmap.org TXT +short
+;; global options: +cmd
+;; no servers could be reached
+</pre>
+            </div>
+        </section>
+        
+        <section id="headers">
+            <h2>🔐 HTTP Headers</h2>
+            <div class="section-content">
+                <pre>[*] Checking https://scanme.nmap.org
+[*] Checking http://scanme.nmap.org
+</pre>
+            </div>
+        </section>
+        
+        <section id="whatweb">
+            <h2>🛠️ Web Technologies (WhatWeb)</h2>
+            <div class="section-content">
+                <pre></pre>
+            </div>
+        </section>
+        
+        <section id="subdomains">
+            <h2>🌐 Subdomains (theHarvester)</h2>
+            <div class="section-content">
+                <pre>Read proxies.yaml from /etc/theHarvester/proxies.yaml
+*******************************************************************
+*  _   _                                            _             *
+* | |_| |__   ___    /\  /\__ _ _ ____   _____  ___| |_ ___ _ __  *
+* | __|  _ \ / _ \  / /_/ / _` | '__\ \ / / _ \/ __| __/ _ \ '__| *
+* | |_| | | |  __/ / __  / (_| | |   \ V /  __/\__ \ ||  __/ |    *
+*  \__|_| |_|\___| \/ /_/ \__,_|_|    \_/ \___||___/\__\___|_|    *
+*                                                                 *
+* theHarvester 4.10.1                                             *
+* Coded by Christian Martorella                                   *
+* Edge-Security Research                                          *
+* cmartorella@edge-security.com                                   *
+*                                                                 *
+*******************************************************************
+
+[*] Target: scanme.nmap.org 
+
+[*] Searching CRTsh. 
+
+[*] No IPs found.
+
+[*] No emails found.
+
+[*] No people found.
+
+[*] No hosts found.
+
+
+</pre>
+            </div>
+        </section>
+        
+        <section id="amass">
+            <h2>🌐 Subdomains (AMASS)</h2>
+            <div class="section-content">
+                <pre>Checking for new libpostal data file...
+New libpostal data file available
+curl: (6) Could not resolve host: github.com
+Warning: Problem : timeout. Retrying in 2 seconds. 3 retries left.
+curl: (6) Could not resolve host: github.com
+Warning: Problem : timeout. Retrying in 2 seconds. 2 retries left.
+curl: (6) Could not resolve host: github.com
+Warning: Problem : timeout. Retrying in 2 seconds. 1 retry left.
+curl: (6) Could not resolve host: github.com
+</pre>
+            </div>
+        </section>
+        
+        <section id="nmap">
+            <h2>🔌 Nmap Service Enumeration</h2>
+            <div class="section-content">
+                <pre>Starting Nmap 7.99 ( https://nmap.org ) at 2026-06-20 20:03 +0530
+Failed to resolve "scanme.nmap.org".
+WARNING: No targets were specified, so 0 hosts scanned.
+Nmap done: 0 IP addresses (0 hosts up) scanned in 4.70 seconds
+</pre>
+            </div>
+        </section>
+        
+        <section id="gobuster">
+            <h2>📁 Gobuster Directory Scan</h2>
+            <div class="section-content">
+                <pre>No data available</pre>
+            </div>
+        </section>
+        
+        <section id="nikto">
+            <h2>⚠️ Nikto Web Vulnerabilities</h2>
+            <div class="section-content">
+                <pre>No data available</pre>
+            </div>
+        </section>
+        
+        <section id="nuclei">
+            <h2>🎯 Nuclei Vulnerability Scan</h2>
+            <div class="section-content">
+                <pre></pre>
+            </div>
+        </section>
+        
+        <footer>
+            <p>Generated by Recon Automation Framework v2.0</p>
+            <p>Author: Amol Nimade | GitHub: Amol1307</p>
+            <p>© 2026 | All Rights Reserved</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,2 @@
+[*] Checking https://scanme.nmap.org
+[*] Checking http://scanme.nmap.org

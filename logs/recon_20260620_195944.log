@@ -1,0 +1,23 @@
+[2026-06-20 19:59:44] Started reconnaissance scan for scanme.nmap.org
+[2026-06-20 19:59:44] Tool found: whois
+[2026-06-20 19:59:44] Tool found: dig
+[2026-06-20 19:59:44] Tool found: curl
+[2026-06-20 19:59:44] Tool found: whatweb
+[2026-06-20 19:59:44] Tool found: nmap
+[2026-06-20 19:59:44] Tool found: theHarvester
+[2026-06-20 19:59:44] Tool found: gobuster
+[2026-06-20 19:59:44] Tool found: nikto
+[2026-06-20 19:59:44] Tool found: amass
+[2026-06-20 19:59:44] Tool found: nuclei
+[2026-06-20 20:00:02] Completed: WHOIS enumeration
+[2026-06-20 20:01:03] Completed: DNS enumeration
+[2026-06-20 20:01:40] Completed: HTTP header analysis
+[2026-06-20 20:02:39] Completed: WhatWeb fingerprinting
+[2026-06-20 20:03:15] Completed: Subdomain enumeration
+[2026-06-20 20:03:38] Completed: AMASS enumeration
+[2026-06-20 20:03:43] Completed: Nmap service scan
+[2026-06-20 20:03:43] Completed: Gobuster directory scan
+[2026-06-20 20:04:18] Completed: Nikto scan
+[2026-06-20 20:05:18] Completed: Nuclei scan
+[2026-06-20 20:05:18] Report saved: ../reports/recon_scanme.nmap.org_20260620_195944.txt
+[2026-06-20 20:05:18] Reconnaissance scan completed successfully
