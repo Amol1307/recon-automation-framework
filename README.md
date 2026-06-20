@@ -1,81 +1,193 @@
 # 🔥 Recon Automation Framework v2.0
 
-An automated reconnaissance framework built with Bash and Kali Linux tools for OSINT, DNS enumeration, web fingerprinting, subdomain discovery, service enumeration, and report generation.
+<p align="center">
+<img src="https://img.shields.io/badge/Bash-Scripting-black?style=for-the-badge&logo=gnubash">
+<img src="https://img.shields.io/badge/Kali-Linux-blue?style=for-the-badge&logo=kalilinux">
+<img src="https://img.shields.io/badge/Nmap-Network%20Scanner-purple?style=for-the-badge">
+<img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge">
+</p>
 
-## 🎯 Features
+Automated reconnaissance framework built with Bash and Kali Linux tools for OSINT, DNS enumeration, web fingerprinting, subdomain discovery, service enumeration, vulnerability scanning, and report generation.
 
-✅ **WHOIS Enumeration** - Domain registration & ownership info
-✅ **DNS Records** - A, MX, NS, TXT, SOA records
-✅ **HTTP Headers** - Server info & security headers
-✅ **Web Fingerprinting** - Technology detection (WhatWeb)
-✅ **Subdomain Enumeration** - Find subdomains (theHarvester + AMASS)
-✅ **Service Enumeration** - Open ports & services (Nmap)
-✅ **Directory Scanning** - Web directories (Gobuster)
-✅ **Web Vulnerabilities** - Nikto scanning
-✅ **Vulnerability Templates** - Nuclei scanning
-✅ **Automated Reports** - Text + HTML comprehensive reports
-✅ **Tool Detection** - Auto-detect missing tools
-✅ **Logging** - Complete scan logs with timestamps
+---
 
-## 🚀 Installation
+## ⚠ Disclaimer
+
+This framework is intended for educational purposes and authorized security assessments only.
+
+Never scan systems without proper authorization.
+
+---
+
+# 🎯 Features
+
+* ✅ WHOIS Enumeration
+* ✅ DNS Enumeration
+* ✅ HTTP Header Analysis
+* ✅ Web Fingerprinting (WhatWeb)
+* ✅ Subdomain Enumeration (theHarvester + AMASS)
+* ✅ Service Enumeration (Nmap)
+* ✅ Directory Enumeration (Gobuster)
+* ✅ Web Vulnerability Scanning (Nikto)
+* ✅ Template-Based Vulnerability Detection (Nuclei)
+* ✅ Tool Detection
+* ✅ Logging
+* ✅ Automated Report Generation
+* ✅ HTML Report Generation
+
+---
+
+# 🛠 Technologies
+
+* Bash
+* Kali Linux
+* Nmap
+* WhatWeb
+* theHarvester
+* AMASS
+* Gobuster
+* Nikto
+* Nuclei
+* Python
+
+---
+
+# 🚀 Installation
 
 ```bash
 git clone https://github.com/Amol1307/recon-automation-framework.git
+
 cd recon-automation-framework
+
 chmod +x scripts/*.sh
-chmod +x generate_html_report.py
 ```
 
-## 📋 Requirements
+---
 
-Install Kali Linux with these tools:
+# 📋 Requirements
+
 ```bash
-apt update && apt install -y whois dnsutils curl nmap whatweb theharvester gobuster nikto amass nuclei
+apt update
+
+apt install -y whois dnsutils curl nmap whatweb theharvester gobuster nikto amass nuclei
 ```
 
-## 💻 Usage
+---
 
-### Master Script (Runs All 10 Scans)
+# 💻 Usage
+
+Run the master script:
 
 ```bash
 ./scripts/recon.sh example.com
 ```
 
-This will automatically:
-1. Run WHOIS enumeration
-2. Enumerate DNS records
-3. Retrieve HTTP headers
-4. Perform web technology fingerprinting
-5. Find subdomains (theHarvester)
-6. Find subdomains (AMASS)
-7. Scan services with Nmap
-8. Scan directories with Gobuster
-9. Scan vulnerabilities with Nikto
-10. Scan vulnerabilities with Nuclei
-11. Generate comprehensive text report
-12. Create detailed logs
+The framework performs:
 
-### Individual Scripts
+1. WHOIS Enumeration
+2. DNS Enumeration
+3. HTTP Header Analysis
+4. Web Fingerprinting
+5. Subdomain Enumeration (theHarvester)
+6. Subdomain Enumeration (AMASS)
+7. Service Enumeration (Nmap)
+8. Directory Enumeration (Gobuster)
+9. Vulnerability Scanning (Nikto)
+10. Vulnerability Scanning (Nuclei)
+11. Logging
+12. Report Generation
 
-```bash
-./scripts/whois_enum.sh example.com
-./scripts/dns_enum.sh example.com
-./scripts/headers.sh example.com
-./scripts/whatweb_scan.sh example.com
-./scripts/subdomain_enum.sh example.com
-./scripts/amass_enum.sh example.com
-./scripts/nmap_scan.sh example.com
-./scripts/gobuster_scan.sh example.com
-./scripts/nikto_scan.sh example.com
-./scripts/nuclei_scan.sh example.com
-```
+---
 
-### Generate HTML Report
+# 📄 Generate HTML Report
 
 ```bash
-python3 generate_html_report.py example.com
+python3 scripts/generate_html_report.py example.com
 ```
 
-This creates a professional HTML report with all scan results.
+---
 
-## 📁 Directory Structure
+# 📁 Project Structure
+
+```text
+recon-automation-framework
+├── logs
+├── reports
+├── scans
+├── screenshots
+├── scripts
+├── findings
+├── targets
+└── README.md
+```
+
+---
+
+# 📸 Screenshots
+
+### Framework Execution
+
+![Framework Output](screenshots/output.png)
+
+### Final Scan Output
+
+![Final Output](screenshots/final.output.png)
+
+---
+
+# 📊 Sample Output
+
+Generated files:
+
+```text
+reports/
+├── report.txt
+├── report.html
+
+scans/
+├── whois.txt
+├── dns.txt
+├── headers.txt
+├── whatweb.txt
+├── subdomains.txt
+├── amass.txt
+├── nmap.txt
+├── gobuster.txt
+├── nikto.txt
+└── nuclei.txt
+```
+
+---
+
+# 🚀 Future Improvements
+
+* Multi-target support
+* Parallel execution
+* JSON reports
+* Colored output
+* Configuration files
+* Assetfinder integration
+* Subfinder integration
+* DNSRecon integration
+* FFUF support
+* HTML dashboard
+
+---
+
+# 📜 License
+
+MIT License
+
+---
+
+## 👨‍💻 Author
+
+**Amol Nimade**
+
+GitHub: https://github.com/Amol1307
+
+LinkedIn: https://www.linkedin.com/in/amol-nimade-0b3436289
+
+---
+
+⭐ If you found this project useful, consider giving it a star.
